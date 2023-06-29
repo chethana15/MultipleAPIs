@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UsersCollectionViewCell" customModule="MultipleAPIs" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="277" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="277" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AyP-GJ-wuL">
+                        <rect key="frame" x="5" y="0.0" width="267" height="160"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="on7-lW-Wi5">
+                                <rect key="frame" x="15" y="15" width="237" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Q6M-2F-PS9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="2m3-S8-yvi">
+                                <rect key="frame" x="15" y="45" width="237" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="5dg-T4-QQ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="g4U-zK-lsP">
+                                <rect key="frame" x="15" y="75" width="237" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="xfA-AT-Bvc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="74R-TO-WGd">
+                                <rect key="frame" x="15" y="105" width="237" height="45"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70142431972789121" green="0.85108013339251709" blue="0.75130208333333337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2m3-S8-yvi" firstAttribute="trailing" secondItem="on7-lW-Wi5" secondAttribute="trailing" id="3BE-hM-S1d"/>
+                            <constraint firstItem="on7-lW-Wi5" firstAttribute="top" secondItem="AyP-GJ-wuL" secondAttribute="top" constant="15" id="B1h-7E-USd"/>
+                            <constraint firstItem="2m3-S8-yvi" firstAttribute="leading" secondItem="on7-lW-Wi5" secondAttribute="leading" id="H5h-Cx-vh8"/>
+                            <constraint firstItem="74R-TO-WGd" firstAttribute="top" secondItem="g4U-zK-lsP" secondAttribute="bottom" constant="5" id="LqK-Pi-vnr"/>
+                            <constraint firstItem="g4U-zK-lsP" firstAttribute="leading" secondItem="2m3-S8-yvi" secondAttribute="leading" id="QPK-7V-aGf"/>
+                            <constraint firstItem="on7-lW-Wi5" firstAttribute="leading" secondItem="AyP-GJ-wuL" secondAttribute="leading" constant="15" id="TEw-rT-USz"/>
+                            <constraint firstAttribute="bottom" secondItem="74R-TO-WGd" secondAttribute="bottom" constant="10" id="V6a-BK-3ul"/>
+                            <constraint firstItem="74R-TO-WGd" firstAttribute="trailing" secondItem="g4U-zK-lsP" secondAttribute="trailing" id="b2s-P9-Msz"/>
+                            <constraint firstItem="74R-TO-WGd" firstAttribute="leading" secondItem="g4U-zK-lsP" secondAttribute="leading" id="cBu-2d-5KA"/>
+                            <constraint firstItem="g4U-zK-lsP" firstAttribute="trailing" secondItem="2m3-S8-yvi" secondAttribute="trailing" id="diZ-CD-YUy"/>
+                            <constraint firstItem="2m3-S8-yvi" firstAttribute="top" secondItem="on7-lW-Wi5" secondAttribute="bottom" constant="5" id="jRU-WF-CPo"/>
+                            <constraint firstItem="g4U-zK-lsP" firstAttribute="top" secondItem="2m3-S8-yvi" secondAttribute="bottom" constant="5" id="r7e-bZ-icG"/>
+                            <constraint firstAttribute="trailing" secondItem="on7-lW-Wi5" secondAttribute="trailing" constant="15" id="t9F-Sd-vW6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="AyP-GJ-wuL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="dgE-QA-CFW"/>
+                <constraint firstItem="AyP-GJ-wuL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pNJ-6F-yiX"/>
+                <constraint firstAttribute="trailing" secondItem="AyP-GJ-wuL" secondAttribute="trailing" constant="5" id="t6y-UQ-WTm"/>
+                <constraint firstAttribute="bottom" secondItem="AyP-GJ-wuL" secondAttribute="bottom" id="zoD-So-B0j"/>
+            </constraints>
+            <size key="customSize" width="277" height="160"/>
+            <connections>
+                <outlet property="addressLbl" destination="74R-TO-WGd" id="W6q-K0-TgO"/>
+                <outlet property="companyLbl" destination="g4U-zK-lsP" id="kqY-xL-8xa"/>
+                <outlet property="nameLbl" destination="on7-lW-Wi5" id="CUe-pC-96A"/>
+                <outlet property="userNameLbl" destination="2m3-S8-yvi" id="fRt-uI-XEO"/>
+                <outlet property="usersView" destination="AyP-GJ-wuL" id="m0T-I7-oId"/>
+            </connections>
+            <point key="canvasLocation" x="278.62595419847327" y="59.154929577464792"/>
+        </collectionViewCell>
+    </objects>
+</document>
